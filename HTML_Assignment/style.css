@@ -1,0 +1,133 @@
+/*navbar with logo*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    height: 60px;
+    line-height: 70px;
+    background: #fff;
+    border-bottom: 2px solid;
+}
+
+.logo{
+    width: 50px;
+    float: left;
+}
+
+.menu{
+    float:right;
+}
+
+.menu li{
+    float:left;
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    list-style: none;
+}
+
+.menu li a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+
+
+}
+
+.menu li:hover{
+    background: #FAAF9F;
+
+}
+
+/* Image with some text*/
+.hero-image{
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("Image/service.jpg");
+height: 50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text {
+text-align: left;
+position: absolute;
+top: 50%;
+left: 20%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.hero-text button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 10px 25px;
+color: black;
+background-color: #ddd;
+text-align: center;
+cursor: pointer;
+}
+
+.hero-text button:hover {
+background-color: #555;
+color: white;
+}
+
+ .box {
+    align-items:center;
+    text-align:center;
+    color:#555555;
+    padding-top:20px;
+    width: 300px;
+    height: 200px;
+    box-sizing:border-box;
+    display:inline-block;
+    margin:20px;
+    flex:33%;
+    
+}
+
+.center{
+    display:flex;
+    align-items:center;
+}
+
+.brands {
+   
+    margin-top: 40px;
+    background-color: #FAAF9F;
+    border: double;
+    padding-left: 50px;
+    margin-bottom: 20px;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+}
+
+.brands__item {
+    background: #eee;
+}
+
+.brands__item img {
+    display: block;
+    /* Make sure max-width is added */
+    width: 50px;
+}
+
+.contact{
+    font-size: 20px;
+    color: violet;
+    text-align: center;
+}
