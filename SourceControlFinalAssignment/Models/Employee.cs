@@ -27,9 +27,9 @@ namespace SourceControlFinalAssignment.Models
         public string Password { get; set; }
 
         /*For taking employee mobile number*/
-        [Required(ErrorMessage = "Enter 10 digit Indian mobile number.")]
+        [Required(ErrorMessage = "Enter 10 digit valid Indian mobile number.")]
         [DataType(DataType.PhoneNumber)]
-        [RegularExpression(@"^[789]\d{9}$")]
+        [RegularExpression(@"^[789]\d{9}$", ErrorMessage = "Enter 10 digit valid Indian mobile number.")]
         public string Phone { get; set; }
 
         /*For taking employee image*/
