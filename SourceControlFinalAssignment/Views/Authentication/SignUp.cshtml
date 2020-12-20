@@ -32,19 +32,19 @@
                 <div class="form-group">
                     @Html.LabelFor(m => m.Name, "Name")
                     @Html.TextBoxFor(m => m.Name, "", new { @class = "form-control", @placeholder = "Name" })
-                    @Html.ValidationMessage("Name", "", new { @class = "badge badge-danger" })
+                    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Employee email-id input field-->
                 <div class="form-group">
                     @Html.LabelFor(m => m.Email, "Email-Id")
                     @Html.TextBoxFor(m => m.Email, "", new { @class = "form-control", @placeholder = "Email" })
-                    @Html.ValidationMessage("Email", "", new { @class = "badge badge-danger" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Employee password input field-->
                 <div class="form-group">
                     @Html.LabelFor(m => m.Password, "Password")
                     @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
-                    @Html.ValidationMessage("Password", "", new { @class = "badge badge-danger" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Employee phone number input field-->
                 <div class="form-group">
@@ -80,6 +80,7 @@
 
     </div>
 
+    <!--jQuery validation files-->
     <script src="~/Scripts/jquery-3.4.1.js"></script>
     <script src="~/Scripts/jquery.validate.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>

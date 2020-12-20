@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -8,9 +9,9 @@ namespace SourceControlFinalAssignment.CustomAttribute
 {
     public class MinExperienceAttribute : ValidationAttribute
     {
-        private int minExp;
+        private float minExp;
         /*Here, we assign pre-defined value*/
-        public MinExperienceAttribute(int value)
+        public MinExperienceAttribute(float value)
         {
             minExp = value;
         }
@@ -23,9 +24,9 @@ namespace SourceControlFinalAssignment.CustomAttribute
         {
             if (value != null)
             {
-                if (value is int)
+                if (value is float)
                 {
-                    int minimumExp = (int)value;
+                    float minimumExp = (float)value;
                     if (minimumExp < minExp)
                     {
                         return new ValidationResult("Minimum experience should be " + minExp + " years !");
@@ -34,5 +35,6 @@ namespace SourceControlFinalAssignment.CustomAttribute
             }
             return ValidationResult.Success;
         }
+
     }
 }

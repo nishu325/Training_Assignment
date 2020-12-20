@@ -1,5 +1,7 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -18,7 +20,7 @@ namespace SourceControlFinalAssignment.Models
 
         /*For taking employee email*/
         [Required]
-        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", ErrorMessage = "Enter valid Emial-id")]
+        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", ErrorMessage = "Enter valid Email-id")]
         public string Email { get; set; }
 
         /*For taking employee password */
@@ -48,7 +50,7 @@ namespace SourceControlFinalAssignment.Models
          This is custom validation for validate this field. 
 
          */
-        [Required]
+        [DisplayName("Enter your total experience")]
         [SourceControlFinalAssignment.CustomAttribute.MinExperience(2)]
         public float Experience { get; set; }
     }
