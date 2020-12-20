@@ -191,3 +191,7 @@ D:\Git-clone\Training_Assignment\SourceControlFinalAssignment\bin\System.Numeric
 D:\Git-clone\Training_Assignment\SourceControlFinalAssignment\bin\System.Runtime.CompilerServices.Unsafe.xml
 D:\Git-clone\Training_Assignment\SourceControlFinalAssignment\bin\System.Text.Encodings.Web.xml
 D:\Git-clone\Training_Assignment\SourceControlFinalAssignment\obj\Debug\SourceControlFinalAssignment.Migrations.InitialModelReady1.resources
+D:\Git-clone\Training_Assignment\SourceControlFinalAssignment\bin\NLog.config
+D:\Git-clone\Training_Assignment\SourceControlFinalAssignment\bin\NLog.dll
+D:\Git-clone\Training_Assignment\SourceControlFinalAssignment\bin\NLog.xml
+D:\Git-clone\Training_Assignment\SourceControlFinalAssignment\obj\Debug\SourceControlFinalAssignment.Migrations.InitialModelReady2.resources

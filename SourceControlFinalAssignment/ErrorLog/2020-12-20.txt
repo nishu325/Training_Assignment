@@ -1,0 +1,51 @@
+------Info(2020-12-20 17:12:45.3876)DESKTOP-809LIO6------
+
+                      Exception Type: |
+                      Exception Message: |
+                      Stack Trace: |
+                      Additional Info:Inside login method check user's credentials.
+
+------Info(2020-12-20 17:12:47.3150)DESKTOP-809LIO6------
+
+                      Exception Type: |
+                      Exception Message: |
+                      Stack Trace: |
+                      Additional Info:login failed
+
+------Info(2020-12-20 17:12:55.9842)DESKTOP-809LIO6------
+
+                      Exception Type: |
+                      Exception Message: |
+                      Stack Trace: |
+                      Additional Info:Inside login method check user's credentials.
+
+------Info(2020-12-20 17:12:56.0171)DESKTOP-809LIO6------
+
+                      Exception Type: |
+                      Exception Message: |
+                      Stack Trace: |
+                      Additional Info:login successfull
+
+
+------Info(2020-12-20 17:14:08.7619)DESKTOP-809LIO6------
+
+                      Exception Type: |
+                      Exception Message: |
+                      Stack Trace: |
+                      Additional Info:user's data saved into database.
+
+
+------Info(2020-12-20 17:18:10.1097)DESKTOP-809LIO6------
+
+                      Exception Type: |
+                      Exception Message: |
+                      Stack Trace: |
+                      Additional Info:user's data saved into database.
+
+------Info(2020-12-20 17:28:17.4055)DESKTOP-809LIO6------
+
+                      Exception Type: |
+                      Exception Message: |
+                      Stack Trace: |
+                      Additional Info:User's email-id already exist.
+
