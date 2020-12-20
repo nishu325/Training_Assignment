@@ -111,13 +111,23 @@ namespace SourceControlFinalAssignment.Controllers
                         TempData["message"] = "Choose correct image";
                     }
 
-                    /*All details added into database*/
-                    db.employees.Add(employee);
-                    db.SaveChanges();
-                    log.Info("user's data saved into database.");
-                    Session["Email"] = employee.Email;
-                    //TempData["message"] = "User added successfully";
-                    return RedirectToAction("DisplayData", "Display");
+                    try
+                    {
+                        /*All details added into database*/
+                        db.employees.Add(employee);
+                        db.SaveChanges();
+                        log.Info("user's data saved into database.");
+                        Session["Email"] = employee.Email;
+                        //TempData["message"] = "User added successfully";
+                        return RedirectToAction("DisplayData", "Display");
+                    }
+
+                    catch(Exception ex)
+                    {
+                        log.Error("error" + ex);
+                        TempData["message"] = "error occured during saving user's data into databse. and exception is = " + ex;
+                    }
+                    
                 }
                 /*Gives message to the user is already registered with that email-id.*/
                 else
