@@ -16,6 +16,8 @@
 </head>
 <body>
 
+
+
     @{ if (TempData["message"] != null)
         {
             <div class="alert alert-success alert-dismissible">
@@ -30,6 +32,9 @@
         <div class="col-12 col-sm-6 col-md-3">
             @using (Html.BeginForm("SignUp", "Authentication", FormMethod.Post))
             {
+
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
                 <!--protect your application against cross-site request forgery.-->
                 @Html.AntiForgeryToken()
                 <div>
@@ -40,53 +45,51 @@
                 <div class="form-group">
                     @Html.LabelFor(m => m.Name, "Name")
                     @Html.TextBoxFor(m => m.Name, "", new { @class = "form-control", @placeholder = "Name" })
-                    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Employee email-id input field-->
                 <div class="form-group">
                     @Html.LabelFor(m => m.Email, "Email-Id")
                     @Html.TextBoxFor(m => m.Email, "", new { @class = "form-control", @placeholder = "Email" })
-                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Employee password input field-->
                 <div class="form-group">
                     @Html.LabelFor(m => m.Password, "Password")
                     @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
-                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Employee phone number input field-->
                 <div class="form-group">
                     @Html.LabelFor(m => m.Phone, "Phone")
                     @Html.TextBoxFor(m => m.Phone, "", new { @class = "form-control", @placeholder = "Phone" })
-                    @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Take employee image-->
                 <div class="form-group">
                     @Html.LabelFor(m => m.ImagePath, "Image")
                     @Html.TextBoxFor(m => m.ImagePath, "", new { @Type = "file", @placeholder = "ImagePath" })
-                    @Html.ValidationMessageFor(m => m.ImagePath, "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Employee Age input field-->
                 <div class="form-group">
                     @Html.LabelFor(m => m.Age, "Age")
                     @Html.TextBoxFor(m => m.Age, "", new { @class = "form-control", @placeholder = "Age" })
-                    @Html.ValidationMessageFor(m => m.Age, "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Employee experience input field-->
                 <div class="form-group">
                     @Html.LabelFor(m => m.Experience, "Experience")
                     @Html.TextBoxFor(m => m.Experience, "", new { @class = "form-control", @placeholder = "Experience" })
-                    @Html.ValidationMessageFor(m => m.Experience, "", new { @class = "badge badge-danger" })
                 </div>
 
 
                 <!--Register button-->
                 <button type="submit" class="btn btn-block btn-primary">Register</button>
+
+
+
             }
 
         </div>
 
     </div>
+
+
 
     <!--jQuery validation files-->
     <script src="~/Scripts/jquery-3.4.1.js"></script>

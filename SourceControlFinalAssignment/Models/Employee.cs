@@ -50,7 +50,7 @@ namespace SourceControlFinalAssignment.Models
          This is custom validation for validate this field. 
 
          */
-        [DisplayName("Enter your total experience")]
+       
         [SourceControlFinalAssignment.CustomAttribute.MinExperience(2)]
         public float Experience { get; set; }
     }

@@ -31,6 +31,8 @@
         <div class="col-12 col-sm-6 col-md-3">
             @using (Html.BeginForm("Login", "Authentication", FormMethod.Post))
             {
+
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
                 <!--protect your application against cross-site request forgery.-->
                 @Html.AntiForgeryToken()
                 <div>
@@ -41,17 +43,16 @@
                 <div class="form-group">
                     @Html.LabelFor(m => m.Email, "Email-Id")
                     @Html.TextBoxFor(m => m.Email, "", new { @class = "form-control", @placeholder = "Email" })
-                    @Html.ValidationMessage("Email", "", new { @class = "badge badge-danger" })
                 </div>
                 <!--Employee password input field-->
                 <div class="form-group">
                     @Html.LabelFor(m => m.Password, "Password")
                     @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
-                    @Html.ValidationMessage("Password", "", new { @class = "badge badge-danger" })
                 </div>
 
                 <!--Login button-->
                 <button type="submit" class="btn btn-block btn-primary">Login</button>
+
             }
 
         </div>
