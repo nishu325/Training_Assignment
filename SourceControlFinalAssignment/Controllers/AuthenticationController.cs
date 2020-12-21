@@ -100,6 +100,7 @@ namespace SourceControlFinalAssignment.Controllers
                         catch (Exception ex)
                         {
                             log.Error("error" + ex);
+                            throw;
                             TempData["message"] = "error occured during saving image" + ex;
                         }
 
@@ -108,6 +109,7 @@ namespace SourceControlFinalAssignment.Controllers
                     else
                     {
                         log.Error("image is not available or image is null.");
+                        
                         TempData["message"] = "Choose correct image";
                     }
 
@@ -125,6 +127,7 @@ namespace SourceControlFinalAssignment.Controllers
                     catch(Exception ex)
                     {
                         log.Error("error" + ex);
+                        throw;
                         TempData["message"] = "error occured during saving user's data into databse. and exception is = " + ex;
                     }
                     
