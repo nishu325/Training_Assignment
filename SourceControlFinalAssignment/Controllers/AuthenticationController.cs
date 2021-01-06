@@ -45,7 +45,7 @@ namespace SourceControlFinalAssignment.Controllers
             {
                 TempData["message"] = "Wrong email-id or password";
                 log.Info("login failed");
-                return RedirectToAction("Login", "Authentication");
+                    
             }
 
 
