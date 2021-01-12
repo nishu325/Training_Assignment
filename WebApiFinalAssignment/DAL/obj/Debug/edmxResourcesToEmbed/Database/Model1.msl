@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebApiProjectModelStoreContainer" CdmEntityContainer="WebApiProjectEntities">
+    <EntitySetMapping Name="Bookings">
+      <EntityTypeMapping TypeName="WebApiProjectModel.Booking">
+        <MappingFragment StoreEntitySet="Booking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Booking_date" ColumnName="Booking_date" />
+          <ScalarProperty Name="Room_Id" ColumnName="Room_Id" />
+          <ScalarProperty Name="Status_Of_Booking" ColumnName="Status_Of_Booking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hotels">
+      <EntityTypeMapping TypeName="WebApiProjectModel.Hotel">
+        <MappingFragment StoreEntitySet="Hotel">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="pincode" ColumnName="pincode" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+          <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rooms">
+      <EntityTypeMapping TypeName="WebApiProjectModel.Room">
+        <MappingFragment StoreEntitySet="Room">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Hotel_Id" ColumnName="Hotel_Id" />
+          <ScalarProperty Name="RoomCategory" ColumnName="RoomCategory" />
+          <ScalarProperty Name="RoomPrice" ColumnName="RoomPrice" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

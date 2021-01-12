@@ -1,0 +1,6 @@
+C:\Users\NISHU\source\repos\Models\bin\Debug\Models.dll
+C:\Users\NISHU\source\repos\Models\bin\Debug\Models.pdb
+C:\Users\NISHU\source\repos\Models\obj\Debug\Models.csprojAssemblyReference.cache
+C:\Users\NISHU\source\repos\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\NISHU\source\repos\Models\obj\Debug\Models.dll
+C:\Users\NISHU\source\repos\Models\obj\Debug\Models.pdb

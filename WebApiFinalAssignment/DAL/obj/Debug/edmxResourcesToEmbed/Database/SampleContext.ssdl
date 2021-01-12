@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebApiProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoomId" Type="int" Nullable="false" />
+    <Property Name="BookingDate" Type="datetime" Nullable="false" />
+    <Property Name="StatusOfBooking" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Hotel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="pincode" Type="int" Nullable="false" />
+    <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContactPerson" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Website" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Facebook" Type="nvarchar" MaxLength="200" />
+    <Property Name="Twitter" Type="nvarchar" MaxLength="200" />
+    <Property Name="IsActive" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Hotel_Id" Type="int" Nullable="false" />
+    <Property Name="RoomCategory" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RoomPrice" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="RoomNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Room__Hotel_Id__2B3F6F97">
+    <End Role="Hotel" Type="Self.Hotel" Multiplicity="1" />
+    <End Role="Room" Type="Self.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="Hotel_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WebApiProjectModelStoreContainer">
+    <EntitySet Name="Booking" EntityType="Self.Booking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hotel" EntityType="Self.Hotel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Room" EntityType="Self.Room" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Room__Hotel_Id__2B3F6F97" Association="Self.FK__Room__Hotel_Id__2B3F6F97">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="Room" EntitySet="Room" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
