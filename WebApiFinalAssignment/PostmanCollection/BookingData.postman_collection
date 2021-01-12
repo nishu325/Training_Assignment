@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "930b584a-6437-4c7b-8884-07859f9c3e54",
+		"name": "Booking",
+		"description": "This folder contains all POST,PUT,DELETE requests of Booking entity.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "https://localhost:44361/api/Booking/AddBooking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RoomId\":10,\r\n    \"BookingDate\":\"2021-01-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/AddBooking",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"AddBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Booking/AddBooking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RoomId\":11,\r\n    \"BookingDate\":\"2021-01-13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/AddBooking",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"AddBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Booking/AddBooking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RoomId\":12,\r\n    \"BookingDate\":\"2021-01-14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/AddBooking",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"AddBooking"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contain all POST requests of BOOKING entity."
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "https://localhost:44361/api/Booking/UpdateBookingDateById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":4,\r\n    \"BookingDate\":\"2021-01-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/UpdateBookingDateById",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"UpdateBookingDateById"
+							]
+						},
+						"description": "update booking date by id"
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Booking/UpdateBookingDateById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":2,\r\n    \"BookingDate\":\"2021-01-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/UpdateBookingDateById",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"UpdateBookingDateById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Booking/UpdateBookingDateById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":11,\r\n    \"BookingDate\":\"2021-01-20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/UpdateBookingDateById",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"UpdateBookingDateById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Booking/UpdateBookingStatus?id=2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"StatusOfBooking\":\"Definitive\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/UpdateBookingStatus?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"UpdateBookingStatus"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Update booking status by booking id"
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Booking/UpdateBookingStatus?id=5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"StatusOfBooking\":\"Cancelled\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/UpdateBookingStatus?id=5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"UpdateBookingStatus"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						},
+						"description": "Update booking status"
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contain all PUT requests of BOOKING entity.\r\nUpdate booking date for any room by Id.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "https://localhost:44361/api/Booking/DeleteBooking?id=2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/DeleteBooking?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"DeleteBooking"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Delete booking by booking id"
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Booking/DeleteBooking?id=11",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Booking/DeleteBooking?id=11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Booking",
+								"DeleteBooking"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contain all DELETE requests of BOOKING entity."
+		}
+	]
+}

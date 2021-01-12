@@ -1,0 +1,658 @@
+{
+	"info": {
+		"_postman_id": "287faaee-af74-4387-9f2c-6e261d14b7a2",
+		"name": "Room",
+		"description": "This folder contain all GET and POST requests of Room entity.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "https://localhost:44361/api/Room/GetRoomDetail?city=Ahmedabad&pincode&price&category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Room/GetRoomDetail?city=Ahmedabad&pincode&price&category",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"GetRoomDetail"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Ahmedabad"
+								},
+								{
+									"key": "pincode",
+									"value": null
+								},
+								{
+									"key": "price",
+									"value": null
+								},
+								{
+									"key": "category",
+									"value": null
+								}
+							]
+						},
+						"description": "Find hotel by City name"
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/GetRoomDetail?city=&pincode=380060&price&category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Room/GetRoomDetail?city=&pincode=380060&price&category",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"GetRoomDetail"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": ""
+								},
+								{
+									"key": "pincode",
+									"value": "380060"
+								},
+								{
+									"key": "price",
+									"value": null
+								},
+								{
+									"key": "category",
+									"value": null
+								}
+							]
+						},
+						"description": "Find hotel's room availability by pincode"
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/GetRoomDetail?city&pincode=&price=15000&category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Room/GetRoomDetail?city&pincode=&price=15000&category",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"GetRoomDetail"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": null
+								},
+								{
+									"key": "pincode",
+									"value": ""
+								},
+								{
+									"key": "price",
+									"value": "15000"
+								},
+								{
+									"key": "category",
+									"value": null
+								}
+							]
+						},
+						"description": "Find hotel's room by price"
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/GetRoomDetail?city&pincode&price&category=Category 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Room/GetRoomDetail?city&pincode&price&category=Category 3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"GetRoomDetail"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": null
+								},
+								{
+									"key": "pincode",
+									"value": null
+								},
+								{
+									"key": "price",
+									"value": null
+								},
+								{
+									"key": "category",
+									"value": "Category 3"
+								}
+							]
+						},
+						"description": "Find hotel's room by room category."
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/GetRoomAvailability?id=2&date=2021-01-06 00:00:00.000",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Room/GetRoomAvailability?id=2&date=2021-01-06 00:00:00.000",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"GetRoomAvailability"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "date",
+									"value": "2021-01-06 00:00:00.000"
+								}
+							]
+						},
+						"description": "Get room availability in response with true or false."
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/GetRoomAvailability?id=2&date=2021-01-07 00:00:00.000",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Room/GetRoomAvailability?id=2&date=2021-01-07 00:00:00.000",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"GetRoomAvailability"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "date",
+									"value": "2021-01-07 00:00:00.000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/GetRoomAvailability?id=7&date=2021-01-15 00:00:00.000",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Room/GetRoomAvailability?id=7&date=2021-01-15 00:00:00.000",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"GetRoomAvailability"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								},
+								{
+									"key": "date",
+									"value": "2021-01-15 00:00:00.000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/GetRoomAvailability?id=9&date=2021-01-07 00:00:00.000",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Room/GetRoomAvailability?id=9&date=2021-01-07 00:00:00.000",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"GetRoomAvailability"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "9"
+								},
+								{
+									"key": "date",
+									"value": "2021-01-07 00:00:00.000"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contain all GET requests of ROOM entity.All data comes in sorted order of RoomPrice low to high.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 7,\r\n    \"RoomCategory\": \"Category 1\",\r\n    \"RoomPrice\": 15000,\r\n    \"IsActive\": \"Yes\",\r\n    \"RoomNo\": \"205\",\r\n    \"CreatedBy\": \"Nishu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						},
+						"description": "Saving room details"
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 7,\r\n    \"RoomCategory\": \"Category 2\",\r\n    \"RoomPrice\": 20000,\r\n    \"IsActive\": \"No\",\r\n    \"RoomNo\": \"306\",\r\n    \"CreatedBy\": \"Dhimen\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 7,\r\n    \"RoomCategory\": \"Category 3\",\r\n    \"RoomPrice\": 25000,\r\n    \"IsActive\": \"Yes\",\r\n    \"RoomNo\": \"425\",\r\n    \"CreatedBy\": \"Parth\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 8,\r\n    \"RoomCategory\": \"Category 2\",\r\n    \"RoomPrice\": 2600,\r\n    \"IsActive\": \"Yes\",\r\n    \"RoomNo\": \"119\",\r\n    \"CreatedBy\": \"Nishu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 8,\r\n    \"RoomCategory\": \"Category 3\",\r\n    \"RoomPrice\": 3200,\r\n    \"IsActive\": \"Yes\",\r\n    \"RoomNo\": \"150\",\r\n    \"CreatedBy\": \"Parth\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 9,\r\n    \"RoomCategory\": \"Category 1\",\r\n    \"RoomPrice\": 13000,\r\n    \"IsActive\": \"No\",\r\n    \"RoomNo\": \"111\",\r\n    \"CreatedBy\": \"Dhimen\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 9,\r\n    \"RoomCategory\": \"Category 2\",\r\n    \"RoomPrice\": 20000,\r\n    \"IsActive\": \"Yes\",\r\n    \"RoomNo\": \"222\",\r\n    \"CreatedBy\": \"Nishu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 9,\r\n    \"RoomCategory\": \"Category 3\",\r\n    \"RoomPrice\": 25000,\r\n    \"IsActive\": \"Yes\",\r\n    \"RoomNo\": \"333\",\r\n    \"CreatedBy\": \"Nishu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 10,\r\n    \"RoomCategory\": \"Category 1\",\r\n    \"RoomPrice\": 1400,\r\n    \"IsActive\": \"Yes\",\r\n    \"RoomNo\": \"56\",\r\n    \"CreatedBy\": \"Happy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 10,\r\n    \"RoomCategory\": \"Category 2\",\r\n    \"RoomPrice\": 2300,\r\n    \"IsActive\": \"No\",\r\n    \"RoomNo\": \"69\",\r\n    \"CreatedBy\": \"Parth\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Room/AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hotel_Id\": 10,\r\n    \"RoomCategory\": \"Category 3\",\r\n    \"RoomPrice\": 3500,\r\n    \"IsActive\": \"Yes\",\r\n    \"RoomNo\": \"85\",\r\n    \"CreatedBy\": \"Nishu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Room/AddRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Room",
+								"AddRoom"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contain all POST requests of ROOM entity."
+		}
+	]
+}

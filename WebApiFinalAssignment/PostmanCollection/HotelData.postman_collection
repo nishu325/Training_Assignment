@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "06426825-f7cb-454a-ae92-d53a00da1c6f",
+		"name": "Hotel",
+		"description": "This collection contains all GET and POST requests of Hotel entity.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "https://localhost:44361/api/Hotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44361/api/Hotel",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Hotel"
+							]
+						},
+						"description": "This request contain all hotel list in alphabetical sorted order."
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contain all GET request of HOTEL entity.\r\n"
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "https://localhost:44361/api/Hotel/AddHotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{       \r\n    \"Name\": \"The Grand Bhagavati\",\r\n    \"Address\": \"S.G Highway\",\r\n    \"City\": \"Ahmedabad\",\r\n    \"Pincode\": 380060,\r\n    \"ContactNumber\": \"9974297367\",\r\n    \"ContactPerson\": \"Happy patel\",\r\n    \"Website\": \"www.tgb.ahmedabad.com\",\r\n    \"Facebook\": \"www.Facebook.com/TGB\",\r\n    \"Twitter\": \"www.Twitter.com/@TGB\",\r\n    \"ISActive\": \"Yes\",\r\n    \"CreatedBy\": \"Nishu\"\r\n        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Hotel/AddHotel",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Hotel",
+								"AddHotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Hotel/AddHotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Shivala\",\r\n    \"Address\": \"Meh-Ahm highway\",\r\n    \"City\": \"Mehsana\",\r\n    \"Pincode\": 384002,\r\n    \"ContactNumber\": \"9685741230\",\r\n    \"ContactPerson\": \"Dhimen patel\",\r\n    \"Website\": \"www.shivala.hotels.com\",\r\n    \"Facebook\": \"www.Facebook.com/ShivalaMehsana\",\r\n    \"Twitter\": \"www.Twitter.com/@ShivalaHotels\",\r\n    \"ISActive\": \"No\",\r\n    \"CreatedBy\": \"Parth\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Hotel/AddHotel",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Hotel",
+								"AddHotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Hotel/AddHotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Shagun\",\r\n    \"Address\": \"Prantij Highway\",\r\n    \"City\": \"Himmatnagar\",\r\n    \"Pincode\": 383205,\r\n    \"ContactNumber\": \"9874563210\",\r\n    \"ContactPerson\": \"Kishan patel\",\r\n    \"Website\": \"www.shagunhotel.com\",\r\n    \"Facebook\": \"www.Facebook.com/ShagunHotel\",\r\n    \"Twitter\": \"www.Twitter.com/@ShagunHotel\",\r\n    \"ISActive\": \"Yes\",\r\n    \"CreatedBy\": \"M.K.Patel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Hotel/AddHotel",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Hotel",
+								"AddHotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Hotel/AddHotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Tulsi\",\r\n    \"Address\": \"Chani cross road\",\r\n    \"City\": \"Vadodara\",\r\n    \"Pincode\": 390002,\r\n    \"ContactNumber\": \"7896541230\",\r\n    \"ContactPerson\": \"Shrey Prajapati\",\r\n    \"Website\": \"www.tulsihotel.com\",\r\n    \"Facebook\": \"www.Facebook.com/TulsiHotel\",\r\n    \"Twitter\": \"www.Twitter.com/@TulsiHotelVadodara\",\r\n    \"ISActive\": \"Yes\",\r\n    \"CreatedBy\": \"Nishu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Hotel/AddHotel",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Hotel",
+								"AddHotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44361/api/Hotel/AddHotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Regency\",\r\n    \"Address\": \"Star bazar\",\r\n    \"City\": \"Surat\",\r\n    \"Pincode\": 394210,\r\n    \"ContactNumber\": \"7586941230\",\r\n    \"ContactPerson\": \"Mayur\",\r\n    \"Website\": \"www.hotelregency.com\",\r\n    \"Facebook\": \"www.Facebook.com/regency\",\r\n    \"Twitter\": \"www.Twitter.com/@HotelRegencySurat\",\r\n    \"ISActive\": \"No\",\r\n    \"CreatedBy\": \"M.K.Patel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44361/api/Hotel/AddHotel",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44361",
+							"path": [
+								"api",
+								"Hotel",
+								"AddHotel"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contains all POST request of HOTEL entity.\r\n"
+		}
+	]
+}
